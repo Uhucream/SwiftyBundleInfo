@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dictionarycoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/almazrafi/DictionaryCoder.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c340c90eeb4ff318ccea992e57e9ace8aaf3357d"
+      }
+    }
+  ],
+  "version" : 2
+}
