@@ -14,6 +14,10 @@ let package = Package(
     ],
     dependencies: [
         .package(
+            url: "https://github.com/Flight-School/AnyCodable",
+            branch: "master"
+        ),
+        .package(
             url: "https://github.com/almazrafi/DictionaryCoder.git",
             branch: "main"
         ),
@@ -24,6 +28,7 @@ let package = Package(
         .target(
             name: "SwiftyBundleInfo",
             dependencies: [
+                .product(name: "AnyCodable", package: "AnyCodable"),
                 .product(name: "DictionaryCoder", package: "DictionaryCoder"),
             ]
         ),
