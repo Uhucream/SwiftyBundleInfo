@@ -23,4 +23,14 @@ public extension Bundle {
             return try? dictionaryDecoder.decode(BundleInfo.self, from: infoDictionary)
         }
     }
+
+    var localizedInfo: BundleInfo? {
+        get {
+            guard let localizedInfoDictionary else { return nil }
+
+            let dictionaryDecoder: DictionaryDecoder = .default
+
+            return try? dictionaryDecoder.decode(BundleInfo.self, from: localizedInfoDictionary)
+        }
+    }
 }
